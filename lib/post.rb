@@ -6,12 +6,15 @@ class Post
   # Create an array of post objects, an array contatining instances of the post class
 
   # Post.all
-  # => [#<Post:0x007fc6019a5348>, #<Post:0x007fc6019a5168>] 
+  # => [#<Post:0x007fc6019a5348>, #<Post:0x007fc6019a5168>]
 
   # with the attributes set
   # Post.all => [post,post]
 
+  attr_accessor :title, :url
   def initialize(array)
+    @title = array[-1].split(".")[0]
+    @url   = "/posts/#{@title}"
 
   end
 
