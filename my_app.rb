@@ -7,7 +7,12 @@ class MyApp < Sinatra::Base
   end
 
   get "/about-me" do
-    "I'm Polly"
+    erb :about_me
+  end
+
+  get "/post/:post_name" do
+    erb params[:post_name].to_sym
+
   end
 
 end
