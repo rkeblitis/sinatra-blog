@@ -1,11 +1,56 @@
-<link rel = "stylesheet" href="/style.css" type =text/css />
-<a href="/">Home</a>
-<a href="/about-me">About Me</a>
-<a href="/post/first_post">First Post</a>
-<a href="/post/second_post">Second Post</a>
-<hr>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href="/layout.css" rel="stylesheet">
+  <script src="/app.js"></script>
+</head>
 
-<%= yield %>
+<!-- Header -->
+<body>
+  <header>
+    <h1>Title of Blog </h1>
+    <hr>
 
-<hr>
-This is my footer
+    <nav class="main-links">
+      <a href="/">Home</a>
+      <a href="/about-me">About Me</a>
+      <!-- <a href="/posts/first_post">First Post</a>
+      <a href="/posts/second_post">Second Post</a> -->
+      <% @posts.each do |post| %>
+        <!-- <a href="/post/name">Title</a>,if commenting you must also comment ruby  -->
+        <!-- out too -->
+        <a href="<%= post.url %>"><%= post.title %></a>
+      <% end %>
+
+      <hr>
+
+    </nav>
+  </header>
+
+  <section class="about-blog">
+    <div class="selfie">
+      <img src="/assets/selfie.jpg" width="250" height= "200">
+    </div>
+    <!-- <hr class="center-line" width=1, size=200> -->
+    <div class="blog-description">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+      </p>
+    </div>
+
+  </section>
+  <hr>
+  </br>
+  <ul class="social-media-links">
+    <li><a href="http://twitter.com/rkeblitis" target="_blank"></a><img src="/assets/twitter_icon_black.jpg" width="45" height= "45"></li>
+    <li><a href="https://www.facebook.com/rachellechristina" target="_blank"></a><img src="/assets/facebook_icon_black.jpg" width="45" height= "45"></li>
+    <li><a href="https://github.com/rkeblitis" target="_blank"></a><img src="/assets/github_icon.jpg" width="45" height= "45"></li>
+  </ul>
+
+  <hr>
+
+  <%= yield %>
+
+</body>

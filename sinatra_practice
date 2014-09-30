@@ -1,1 +1,82 @@
+/*Basic Layout*/
 
+#layout {
+  color: rgb(255,103,99);
+  letter-spacing: 0.3em;
+  word-spacing: 1em;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+
+  }
+#layout a {
+    color: rgb(202, 204, 38);
+    letter-spacing: 0.3em;
+    word-spacing: 1em;
+    font-family: 'Poiret One', cursive
+  }
+
+
+#header {
+  font-size: 16px;
+  color: rgb(34,116,179);
+  /*color: rgb(255,103,99);*/
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 0.3em;
+  word-spacing: 1.75em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#body {
+  color: rgb(34,116,179);
+
+}
+
+
+#links h1 {
+    color: rgb(255,103,99);
+    /*background: white url(swirly.jpg) no-repeat center;*/
+}
+
+
+footer {
+  color: rgb(255,103,99);
+
+  position: absolute;
+  bottom: 0;
+}
+
+p {
+    color: rgb(34,116,179);
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    word-spacing: normal;
+    line-height: 1.5;
+    text-align: center;
+    padding: 100px;
+    margin: 50px;
+}
+
+
+
+
+
+nav.main-links a {
+  color: black;
+  display: block;
+  font-size: 22px;
+  height: 22px;
+  margin-left: 14px;
+  overflow: hidden;
+  padding-bottom: 2px;
+  text-align: center;
+  width: 100%;
+}
+
+section .about-blog{
+  border-right: 1px solid red;
+  float: left;
+  max-width: 205px;
+  margin-right: 19px;
+  padding-right: 19px;
+}

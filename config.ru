@@ -1,2 +1,2 @@
-require './my_app'
-run MyApp
+require './blog_app'
+run BlogApp

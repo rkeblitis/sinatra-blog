@@ -1,0 +1,50 @@
+/*Layout Page*/
+body{
+	display: block;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
+header{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.main-links a{
+	margin: 25px;
+}
+
+.about-blog{
+	margin: 45px;
+	height: 200px
+}
+
+
+.selfie{
+	/*display: inline-block;*/
+	/*margin-right: 350px;*/
+	background-color: yellow;
+	float: left;
+}
+
+.blog-description{
+	width: 250px;
+	color: black;
+	float: right;
+	border-left: 1px solid black;
+	padding-left: 75px;
+}
+
+ul {
+	list-style: none;
+	background-color: yellow;
+	/*height: 3px;*/
+	/*display: inline-block;*/
+}
+
+li{
+	display: inline-block;
+	margin-bottom: 5px;
+
+
+}

@@ -1,0 +1,51 @@
+/*Basic Layout*/
+
+#links {
+  color: rgb(202, 204, 38);
+  letter-spacing: 0.3em;
+  word-spacing: 1em;
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  }
+
+#header {
+  font-size: 16px;
+  color: rgb(34,116,179);
+  /*color: rgb(255,103,99);*/
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 0.3em;
+  word-spacing: 1.75em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#body {
+
+}
+
+footer {
+  text-align: bottom left
+}
+
+
+
+h1 {
+    color: rgb(177,178,43);
+    /*background: white url(swirly.jpg) no-repeat center;*/
+}
+
+
+p. {
+    color: rgb(34,116,179);
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    word-spacing: normal;
+    line-height: 1.5;
+    text-align: center;
+}
+
+a {
+    color: rgb(202, 204, 38);
+    letter-spacing: 0.3em;
+    word-spacing: 1em;
+  }

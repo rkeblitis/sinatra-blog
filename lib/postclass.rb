@@ -1,4 +1,4 @@
-class Post
+class PostClass
   # Access posts, files within views/posts
   # Attributes: title, url, filename
 
