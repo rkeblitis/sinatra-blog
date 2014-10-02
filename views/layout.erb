@@ -1,56 +1,76 @@
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
   <link href="/layout.css" rel="stylesheet">
   <script src="/app.js"></script>
 </head>
 
 <!-- Header -->
 <body>
-  <header>
-    <h1>Title of Blog </h1>
-    <hr>
+  <div class="outter-container">
+    <header>
+      <h1>{passion: "code", status: "noob"} </h1>
 
-    <nav class="main-links">
-      <a href="/">Home</a>
-      <a href="/about-me">About Me</a>
-      <!-- <a href="/posts/first_post">First Post</a>
-      <a href="/posts/second_post">Second Post</a> -->
-      <% @posts.each do |post| %>
-        <!-- <a href="/post/name">Title</a>,if commenting you must also comment ruby  -->
-        <!-- out too -->
-        <a href="<%= post.url %>"><%= post.title %></a>
-      <% end %>
+      <nav class="main-links">
+        <a href="/">Home</a>
+        <a href="/about-me">About Me</a>
 
-      <hr>
+        <span class="archive"> Archive
+          <ul class="dropdown">
 
-    </nav>
-  </header>
+            <% @posts.each do |post| %>
+              <li><a href="<%= post.url %>"><%= post.title %></a><li>
 
-  <section class="about-blog">
-    <div class="selfie">
-      <img src="/assets/selfie.jpg" width="250" height= "200">
+            <% end %>
+          </ul>
+        </span>
+
+
+      </nav>
+
+    </header>
+
+    <section class="about-blog">
+      <div class="selfie">
+        <img src="/assets/selfie.jpg" width="250" height= "200">
+      </div>
+      <!-- <hr class="center-line" width=1, size=200> -->
+      <div class="blog-description">
+        <p>
+          Learning to code and loving the challenge. They say teaching is the best form of learning.
+          I hope to provide some insight to those who are also diving into the awesome world of Computer Science.
+          May you avoid the mistakes I spent hours stress snacking over.
+
+          <!-- For the next year a student at <a href="http://twitter.com/rkeblitis" target="_blank">Ada Developers Academy</a> -->
+        </p>
+      </div>
+
+    </section>
+
+    <aside class="sm">
+      <ul class="sm-links">
+
+        <a href="http://twitter.com/rkeblitis" target="_blank">
+         <img src="/assets/twitter_icon_black.jpg" width= 35px height= 35px>
+        </a>
+
+
+        <a href="https://www.facebook.com/rachellechristina" target="_blank">
+          <img src="/assets/facebook_icon_black.jpg" width= 35px height= 35px>
+        </a>
+
+        <a href="https://github.com/rkeblitis" target="_blank">
+          <img src="/assets/github_icon.jpg" width= 35px height= 35px>
+        </a>
+
+      </ul>
+
+    </aside>
+
+    <div class="body-container">
+      <%= yield %>
     </div>
-    <!-- <hr class="center-line" width=1, size=200> -->
-    <div class="blog-description">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-      </p>
-    </div>
+  </div>
 
-  </section>
-  <hr>
-  </br>
-  <ul class="social-media-links">
-    <li><a href="http://twitter.com/rkeblitis" target="_blank"></a><img src="/assets/twitter_icon_black.jpg" width="45" height= "45"></li>
-    <li><a href="https://www.facebook.com/rachellechristina" target="_blank"></a><img src="/assets/facebook_icon_black.jpg" width="45" height= "45"></li>
-    <li><a href="https://github.com/rkeblitis" target="_blank"></a><img src="/assets/github_icon.jpg" width="45" height= "45"></li>
-  </ul>
-
-  <hr>
-
-  <%= yield %>
 
 </body>

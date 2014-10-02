@@ -1,50 +1,119 @@
-/*Layout Page*/
+.outter-container{
+	width: 690px;
+	margin: 0px auto;
+}
+
 body{
+	color: rgb(60,79,102);
+	/*color: rgb(34,116,179);*/
+	font-family: 'Rajdhani', sans-serif;
 	display: block;
-	margin-left: 250px;
-	margin-right: 250px;
+}
+
+h1{
+	border-bottom: 1px solid rgb(217,217,217);
+	padding-bottom: 15px;
 }
 
 header{
+	color: rgb(202, 204, 38);
+	/*color: rgb(255, 44, 23);*/
+	letter-spacing: 0.3em;
 	margin-top: 40px;
 	text-align: center;
+	border-bottom: 1px solid rgb(217,217,217);
+	padding-bottom: 21.440px;
 }
 
 .main-links a{
-	margin: 25px;
+	color: rgb(38,199,204);
+	/*color: rgb(255,103,99);*/
+	font-size: 12pt;
+	margin: 11.3px;
+	text-decoration: none;
 }
+
+.dropdown{
+	display: none;
+}
+
+.archive{
+	color: rgb(38,199,204);
+	position: relative;
+}
+
+.archive:hover > .dropdown {
+	display: block;
+	position: absolute;
+	list-style-type: none;
+	background-color: gray;
+	margin-left: 15px;
+
+}
+
 
 .about-blog{
-	margin: 45px;
-	height: 200px
+	margin: 45px auto;
+	height: 200px;
+	border-bottom: 1px solid rgb(217,217,217);
+	padding-bottom: 45px;
+	margin-bottom: 0px;
 }
-
 
 .selfie{
-	/*display: inline-block;*/
-	/*margin-right: 350px;*/
-	background-color: yellow;
 	float: left;
-}
-
-.blog-description{
-	width: 250px;
-	color: black;
-	float: right;
-	border-left: 1px solid black;
-	padding-left: 75px;
+	border-right: 1px solid rgb(217,217,217);
+	padding-right: 75px;
 }
 
 ul {
-	list-style: none;
-	background-color: yellow;
-	/*height: 3px;*/
-	/*display: inline-block;*/
+	float: right;
+	margin: 5px auto;
+	margin-top: 7;
+
 }
 
-li{
-	display: inline-block;
-	margin-bottom: 5px;
+ul a{
+	text-decoration: none;
 
+}
 
+.sm{
+	height: 50px;
+	padding-right: 25px;
+	border-bottom: 1px solid rgb(217,217,217);
+
+}
+
+.blog-description{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 13.5px;
+	letter-spacing: 0.1em;
+	width: 250px;
+	float: right;
+}
+
+.recent-post{
+	text-align: center;
+	font-size: 1em;
+}
+
+h2{
+	color: rgb(210, 121, 92);
+	font-size: 24px;
+	text-align: left;
+}
+
+.body-container{
+}
+
+.index a{
+	text-decoration: none;
+}
+
+.enumerable_map-container{
+	border: 1px solid gray;
+	width: 395px;
+	height= 283px;
+	float: right
 }
